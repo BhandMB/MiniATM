@@ -1,121 +1,131 @@
-import java.util.*;
+#  Mini ATM System (Java)
 
-class ATM {
-    private String accountNumber;
-    private int pin;
-    private double balance;
-    private List<String> transactionHistory;
+A simple **console-based ATM simulation** built using Java. This project demonstrates core Java concepts such as **OOP (Object-Oriented Programming), user input handling, and basic banking operations**.
 
-    public ATM(String accountNumber, int pin, double initialBalance) {
-        this.accountNumber = accountNumber;
-        this.pin = pin;
-        this.balance = initialBalance;
-        this.transactionHistory = new ArrayList<>();
-    }
+---
 
-    public boolean authenticate(String account, int inputPin) {
-        return this.accountNumber.equals(account) && this.pin == inputPin;
-    }
+## 📌 Features
 
-    public double checkBalance() {
-        return balance;
-    }
-    
-    public void deposit(double amount) {
-        if (amount > 0) {
-            balance += amount;
-            transactionHistory.add("Deposited: $" + amount);
-            System.out.println("Amount deposited successfully!");
-        } else {
-            System.out.println("Invalid amount. Please enter a positive value.");
-        }
-    }
+* 🔐 User Authentication (Account Number + PIN)
+* 💰 Check Account Balance
+* ➕ Deposit Money
+* ➖ Withdraw Money
+* 📜 Transaction History
+* ❌ Exit System
 
-    public void withdraw(double amount) {
-        if (amount > 0 && amount <= balance) {
-            balance -= amount;
-            transactionHistory.add("Withdrew: $" + amount);
-            System.out.println("Withdrawal successful!");
-        } else if (amount > balance) {
-            System.out.println("Insufficient balance!");
-        } else {
-            System.out.println("Invalid amount. Please enter a positive value.");
-        }
-    }
+---
 
-    public void showTransactionHistory() {
-        if (transactionHistory.isEmpty()) {
-            System.out.println("No transactions available.");
-        } else {
-            System.out.println("Transaction History:");
-            for (String transaction : transactionHistory) {
-                System.out.println(transaction);
-            }
-        }
-    }
-}
+## 🛠️ Technologies Used
 
-public class MiniATM {
-    public static void main (String[] args) {
-        Scanner scanner = new Scanner(System.in);
+* Java (Core Java)
+* OOP Concepts (Encapsulation, Classes, Methods)
+* Java Collections (`ArrayList`)
+* Scanner (User Input)
 
-        // Create a sample account
-        ATM account = new ATM("123456789", 1234, 500.00);
+---
 
-        System.out.println("Welcome to Mini ATM System!");
+## 📂 Project Structure
 
-        // Login attempt
-        System.out.print("Enter Account Number: ");
-        String accountNumber = scanner.nextLine();
+```
+MiniATM.java
+ ├── ATM Class
+ │    ├── authenticate()
+ │    ├── checkBalance()
+ │    ├── deposit()
+ │    ├── withdraw()
+ │    └── showTransactionHistory()
+ │
+ └── Main Class (MiniATM)
+      └── Menu-driven program
+```
 
-        System.out.print("Enter PIN: ");
-        int pin = scanner.nextInt();
+---
 
-        if (account.authenticate(accountNumber, pin)) {
-            System.out.println("Login successful!");
+## ▶️ How to Run
 
-            while (true) {
-                System.out.println("\n--- ATM Menu ---");
-                System.out.println("1. Check Balance");
-                System.out.println("2. Deposit Money");
-                System.out.println("3. Withdraw Money");
-                System.out.println("4. Transaction History");
-                System.out.println("5. Exit");
-                System.out.print("Choose an option: ");
+1. Clone the repository:
 
-                int choice = scanner.nextInt();
+```
+git clone https://github.com/your-username/mini-atm-java.git
+```
 
-                switch (choice) {
-                    case 1:
-                        System.out.println("Current Balance: $" + account.checkBalance());
-                        break;  
-                    case 2:
-                        System.out.print("Enter amount to deposit: $");
-                        double depositAmount = scanner.nextDouble();
-                        account.deposit(depositAmount);
-                        break;
-                    case 3:
-                        System.out.print("Enter amount to withdraw: $");
-                        double withdrawAmount = scanner.nextDouble();
-                        account.withdraw(withdrawAmount);
-                        break;
-                    case 4:
-                        account.showTransactionHistory();
-                        break;
-                    case 5:
-                        System.out.println("Thank you for using Mini ATM. Goodbye!");
-                        scanner.close();
-                        return;
-                    default:
-                        System.out.println("Invalid choice. Please try again.");
-                }
-            }
-        } else {
-            System.out.println("Invalid account number or PIN. Access denied.");
-        }
-    }
-}
+2. Navigate to the project folder:
+
+```
+cd mini-atm-java
+```
+
+3. Compile the program:
+
+```
+javac MiniATM.java
+```
+
+4. Run the program:
+
+```
+java MiniATM
+```
+
+---
+
+## 🔑 Default Login Credentials
+
+```
+Account Number: 123456789
+PIN: 1234
+```
+
+---
+
+## 💡 Sample Menu
+
+```
+--- ATM Menu ---
+1. Check Balance
+2. Deposit Money
+3. Withdraw Money
+4. Transaction History
+5. Exit
+```
+
+---
+
+## 📸 Example Output
+
+```
+Welcome to Mini ATM System!
+Enter Account Number: 123456789
+Enter PIN: 1234
+
+Login successful!
+
+--- ATM Menu ---
+1. Check Balance
+2. Deposit Money
+3. Withdraw Money
+4. Transaction History
+5. Exit
+```
+
+---
+
+## 🚀 Future Enhancements
+
+* Multiple user accounts support
+* PIN encryption for security
+* GUI version using Java Swing or JavaFX
+* Database integration (MySQL)
+* ATM card simulation
+
+---
+
+## 📚 Learning Outcomes
+
+* Understanding of **Java classes and objects**
+* Hands-on experience with **control structures**
+* Working with **collections (ArrayList)**
+* Building **menu-driven applications**
 
 
-
-
+⭐ If you like this project, don't forget to give it a star on GitHub!
