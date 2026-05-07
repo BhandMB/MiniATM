@@ -128,7 +128,3 @@ Login successful!
 * Hands-on experience with **control structures**
 * Working with **collections (ArrayList)**
 * Building **menu-driven applications**
-
-
-
-⭐ If you like this project, don't forget to give it a star on GitHub!
