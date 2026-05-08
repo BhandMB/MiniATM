@@ -13,7 +13,7 @@ Hello
 * 📜 Transaction History
 * ❌ Exit System
 
----
+------------------------------------------------------
 
 ## 🛠️ Technologies Used
 
@@ -22,9 +22,7 @@ Hello
 * Java Collections (`ArrayList`)
 * Scanner (User Input)
 
-
-
----
+------------------------------------------------------
 
 ## 📂 Project Structure
 
@@ -41,7 +39,7 @@ MiniATM.java
       └── Menu-driven program
 ```
 
----
+-------------------------------------------------------------
 
 ## ▶️ How to Run
 
