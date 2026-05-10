@@ -108,7 +108,7 @@ Login successful!
 5. Exit
 ```
 
----
+-------------------------------------------
 
 ## 🚀 Future Enhancements
 
