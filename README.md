@@ -2,7 +2,7 @@
 
 A simple **console-based ATM simulation** built using Java. This project demonstrates core Java concepts such as **OOP (Object-Oriented Programming), user input handling, and basic banking operations**.
 
----
+---     
 
 ## 📌 Features
 Hello
@@ -26,7 +26,7 @@ Hello
 
 ## 📂 Project Structure
 
-```
+```       
 MiniATM.java
  ├── ATM Class
  │    ├── authenticate()
