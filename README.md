@@ -118,7 +118,7 @@ Login successful!
 * Database integration (MySQL)
 * ATM card simulation
 
-----------------------------------------------------
+-------------------------------------------
 
 ## 📚 Learning Outcomes
 
