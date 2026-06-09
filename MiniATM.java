@@ -114,12 +114,5 @@ public class MiniATM {
             System.out.println("Invalid account number or PIN. Access denied.");
         }
     }
-    X_reduced = PCA(n_components=3).fit_transform(iris.data)
-scatter = ax.scatter(
-    X_reduced[:, 0],
-    X_reduced[:, 1],
-    X_reduced[:, 2],
-    c=iris.target,
-    s=40,
 )
 }
