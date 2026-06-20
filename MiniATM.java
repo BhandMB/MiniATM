@@ -16,7 +16,7 @@ class ATM {
     public boolean authenticate(String account, int inputPin) {
         return this.accountNumber.equals(account) && this.pin == inputPin;
     }
-
+    
     public double checkBalance() {
         return balance;
     }
