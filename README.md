@@ -126,5 +126,3 @@ Login successful!
 * Hands-on experience with **control structures**
 * Working with **collections (ArrayList)**
 * Building **menu-driven applications**
-
-[;
