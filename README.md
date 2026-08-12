@@ -55,7 +55,7 @@ git clone https://github.com/your-username/mini-atm-java.git
 cd mini-atm-java
 ```
 
-3. Compile the program:
+3. Compile the program:  
 
 ```
 javac MiniATM.java
@@ -121,6 +121,7 @@ Login successful!
 ----------------------------------------
 
 ## 📚 Learning Outcomes
+n
 
 * Understanding of **Java classes and objects**
 * Hands-on experience with **control structures**
