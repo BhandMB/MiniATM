@@ -121,7 +121,6 @@ Login successful!
 ----------------------------------------
 
 ## 📚 Learning Outcomes
-n
 
 * Understanding of **Java classes and objects**
 * Hands-on experience with **control structures**
