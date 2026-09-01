@@ -1,32 +1,33 @@
-#  Mini ATM System (Java)
+# Mini ATM System (Java)
 
-A simple **console-based ATM simulation** built using Java. This project demonstrates core Java concepts such as **OOP (Object-Oriented Programming), user input handling, and basic banking operations**.
+A simple **console-based ATM simulation** built using Java. This project demonstrates core Java concepts such as **OOP (Object-Oriented Programming), user input handling, validation, and basic banking operations**.
 
-----------------------------------------------------
+---
 
 ## 📌 Features
-Hello
-* 🔐 User Authentication (Account Number + PIN)
-* 💰 Check Account Balance
-* ➕ Deposit Money
-* ➖ Withdraw Money
-* 📜 Transaction History
-* ❌ Exit System
 
--------------------------------------------------
+- 🔐 User Authentication (Account Number + PIN)
+- 💰 Check Account Balance
+- ➕ Deposit Money
+- ➖ Withdraw Money
+- 📜 Transaction History
+- ❌ Exit System
+- 🛡️ Basic input validation for banking operations
+
+---
 
 ## 🛠️ Technologies Used
 
-* Java (Core Java)
-* OOP Concepts (Encapsulation, Classes, Methods)
-* Java Collections (`ArrayList`)
-* Scanner (User Input)
+- Java (Core Java)
+- OOP Concepts (Encapsulation, Classes, Methods)
+- Java Collections (`ArrayList`)
+- Scanner (User Input)
 
-------------------------------------------------
+---
 
 ## 📂 Project Structure
 
-```       
+```text
 MiniATM.java
  ├── ATM Class
  │    ├── authenticate()
@@ -39,31 +40,31 @@ MiniATM.java
       └── Menu-driven program
 ```
 
-------------------------------------------
+---
 
 ## ▶️ How to Run
 
 1. Clone the repository:
 
-```
-git clone https://github.com/your-username/mini-atm-java.git
+```bash
+git clone https://github.com/BhandMB/MiniATM.git
 ```
 
 2. Navigate to the project folder:
 
-```
-cd mini-atm-java
+```bash
+cd MiniATM
 ```
 
-3. Compile the program:  
+3. Compile the program:
 
-```
+```bash
 javac MiniATM.java
 ```
 
 4. Run the program:
 
-```
+```bash
 java MiniATM
 ```
 
@@ -71,7 +72,7 @@ java MiniATM
 
 ## 🔑 Default Login Credentials
 
-```
+```text
 Account Number: 123456789
 PIN: 1234
 ```
@@ -80,7 +81,7 @@ PIN: 1234
 
 ## 💡 Sample Menu
 
-```
+```text
 --- ATM Menu ---
 1. Check Balance
 2. Deposit Money
@@ -89,11 +90,11 @@ PIN: 1234
 5. Exit
 ```
 
------------------------------
+---
 
 ## 📸 Example Output
 
-```
+```text
 Welcome to Mini ATM System!
 Enter Account Number: 123456789
 Enter PIN: 1234
@@ -108,21 +109,28 @@ Login successful!
 5. Exit
 ```
 
-------------------------------
+---
 
 ## 🚀 Future Enhancements
 
-* Multiple user accounts support
-* PIN encryption for security
-* GUI version using Java Swing or JavaFX
-* Database integration (MySQL)
-* ATM card simulation
+- Multiple user accounts support
+- PIN encryption for security
+- GUI version using Java Swing or JavaFX
+- Database integration (MySQL)
+- ATM card simulation
 
-----------------------------------------
+---
 
 ## 📚 Learning Outcomes
 
-* Understanding of **Java classes and objects**
-* Hands-on experience with **control structures**
-* Working with **collections (ArrayList)**
-* Building **menu-driven applications**
+- Understanding of **Java classes and objects**
+- Hands-on experience with **control structures**
+- Working with **collections (ArrayList)**
+- Building **menu-driven applications**
+- Practicing input validation and defensive programming
+
+---
+
+## 📝 Maintenance Notes
+
+README documentation was refreshed on **September 1, 2026** to correct the repository setup instructions, remove outdated text, and make the project structure and learning outcomes clearer.
