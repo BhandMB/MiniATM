@@ -131,6 +131,21 @@ Login successful!
 
 ---
 
+## 🧪 Manual Testing Checklist
+
+Before considering a change complete, verify:
+
+- [ ] Correct account number and PIN authenticate successfully
+- [ ] Invalid credentials are rejected
+- [ ] Balance inquiry shows the current balance
+- [ ] Deposits increase the balance correctly
+- [ ] Withdrawals decrease the balance correctly
+- [ ] Invalid or excessive withdrawals are rejected
+- [ ] Transaction history records completed operations
+- [ ] Exit closes the menu cleanly
+
+---
+
 ## 📝 Maintenance Notes
 
-README documentation was refreshed on **September 1, 2026** to correct the repository setup instructions, remove outdated text, and make the project structure and learning outcomes clearer.
+README documentation was refreshed on **September 2, 2026** with a manual testing checklist covering authentication, transactions, validation, and exit behavior.
