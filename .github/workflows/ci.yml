@@ -9,18 +9,21 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: mini-atm-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   compile:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v5
-
       - name: Set up JDK 17
         uses: actions/setup-java@v5
         with:
           java-version: "17"
           distribution: temurin
-
       - name: Compile
         run: javac MiniATM.java
