@@ -26,4 +26,4 @@ jobs:
           java-version: "17"
           distribution: temurin
       - name: Compile
-        run: javac MiniATM.java
+        run: javac -Xlint:all MiniATM.java
