@@ -1,0 +1,1 @@
+MiniATM: balance and ledger invariants
