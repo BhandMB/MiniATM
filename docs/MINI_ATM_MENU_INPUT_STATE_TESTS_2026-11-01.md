@@ -1,0 +1,1 @@
+MiniATM: menu and input state tests
